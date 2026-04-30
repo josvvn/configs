@@ -42,3 +42,6 @@ map('n', '<leader>td', '<cmd>TroubleToggle document_diagnostics<cr>', opts)
 map('n', '<leader>tl', '<cmd>TroubleToggle loclist<cr>', opts)
 map('n', '<leader>tq', '<cmd>TroubleToggle quickfix<cr>', opts)
 map('n', '<leader>tr', '<cmd>TroubleToggle lsp_references<cr>', opts)
+
+-- Oil
+map('n', '\\', ':Oil<CR>', opts)

@@ -15,19 +15,31 @@ vim.g.mapleader = " "
 
 local plugins = {
     'nyoom-engineering/oxocarbon.nvim',
+    'thallada/farout.nvim',
     'jiangmiao/auto-pairs',
     {
-        'nvim-lualine/lualine.nvim',
-        dependencies = {{'kyazdani42/nvim-web-devicons'}},
-        config = function()
-            require 'plugin_configs.lualine'
-        end
+      'nvim-lualine/lualine.nvim',
+      config = function()
+          require 'plugin_configs.lualine'
+      end
     },
     {
-        'kyazdani42/nvim-tree.lua',
+        'stevearc/oil.nvim',
+        lazy = false,
         config = function()
-            require 'nvim-tree'.setup{}
+            require 'oil'.setup{
+                columns = {
+                    -- "icon",
+                    "permissions",
+                    "size"
+                },
+                view_options = {
+                    show_hidden = true
+                },
+                watch_for_changes = true
+            }
         end
+
     },
     {
         'nvim-treesitter/nvim-treesitter',
@@ -54,7 +66,7 @@ local plugins = {
         config = function()
             require 'plugin_configs.coc'
         end
-    }
+    },
 }
 
 local opts = {}

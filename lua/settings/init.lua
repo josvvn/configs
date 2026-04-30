@@ -16,6 +16,16 @@ vim.o.clipboard = 'unnamed'
 vim.o.termguicolors = true
 vim.o.splitbelow = true
 
+vim.g.BorlandStyle = 'modern'
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "oil",
+  callback = function()
+    -- Set eventignore for this buffer only to stop BufEnter/BufWinEnter
+    vim.opt_local.eventignore:append({ "BufEnter", "BufWinEnter" })
+  end,
+})
+
 vim.cmd [[set noshowmode]]
 --vim.cmd [[set guifont=Cousine\ NF:h14]]
 --vim.cmd [[set guifont=GohuFont\ Nerd\ Font\ Mono\:h14]]
@@ -24,7 +34,7 @@ vim.cmd [[filetype plugin on]]
 vim.cmd [[filetype on]]
 vim.cmd [[autocmd BufEnter * lcd %:p:h]]
 
-vim.cmd [[colorscheme oxocarbon]]
+vim.cmd [[colorscheme farout]]
 
 require('lualine').setup({})
 require('luatab').setup({}) 
