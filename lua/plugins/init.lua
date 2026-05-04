@@ -42,13 +42,29 @@ local plugins = {
 
     },
     {
-        'nvim-treesitter/nvim-treesitter',
-        lazy = false,
-        build = ':TSUpdate',
+        'romus204/tree-sitter-manager.nvim',
         config = function()
-            require 'plugin_configs.treesitter'
+            require 'tree-sitter-manager'.setup{
+                columns = {
+                    -- "icon",
+                    "permissions",
+                    "size"
+                },
+                view_options = {
+                    show_hidden = true
+                },
+                watch_for_changes = true
+            }
         end
     },
+    --{
+    --    'nvim-treesitter/nvim-treesitter',
+    --    lazy = false,
+    --    build = ':TSUpdate',
+    --    config = function()
+    --        require 'plugin_configs.treesitter'
+    --    end
+    --},
     'alvarosevilla95/luatab.nvim',
     'haya14busa/incsearch.vim',
     {

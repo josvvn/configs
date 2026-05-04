@@ -6,10 +6,10 @@
   "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "lualine.nvim": { "branch": "master", "commit": "131a558e13f9f28b15cd235557150ccb23f89286" },
   "luatab.nvim": { "branch": "master", "commit": "79d53c11bd77274b49b50f1d6fdb10529d7354b7" },
-  "nvim-treesitter": { "branch": "main", "commit": "e1ab5391e5c4820dd1ffc2566d29b01573ab52a9" },
   "oil.nvim": { "branch": "master", "commit": "0fcc83805ad11cf714a949c98c605ed717e0b83e" },
   "oxocarbon.nvim": { "branch": "main", "commit": "12a7507f1cd5ac6edb890d12268e4444a35956f2" },
   "plenary.nvim": { "branch": "master", "commit": "102c02903c74b93c705406bf362049383abc87c8" },
   "telescope.nvim": { "branch": "master", "commit": "0e0600908d1ad5ac4992fa0ab578e23e9d9d6f37" },
+  "tree-sitter-manager.nvim": { "branch": "main", "commit": "33a94d022e3a5a500d878b784ba7fec61559c70a" },
   "vim-enfocado": { "branch": "main", "commit": "2a8fffdff1a20473f0fbacef10f2fb356e039b31" }
 }
