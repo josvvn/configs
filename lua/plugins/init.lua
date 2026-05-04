@@ -15,8 +15,8 @@ vim.g.mapleader = " "
 
 local plugins = {
     'nyoom-engineering/oxocarbon.nvim',
-    'thallada/farout.nvim',
     'jiangmiao/auto-pairs',
+    'wuelnerdotexe/vim-enfocado',
     {
       'nvim-lualine/lualine.nvim',
       config = function()
@@ -43,6 +43,7 @@ local plugins = {
     },
     {
         'nvim-treesitter/nvim-treesitter',
+        lazy = false,
         build = ':TSUpdate',
         config = function()
             require 'plugin_configs.treesitter'

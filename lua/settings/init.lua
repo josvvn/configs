@@ -16,8 +16,6 @@ vim.o.clipboard = 'unnamed'
 vim.o.termguicolors = true
 vim.o.splitbelow = true
 
-vim.g.BorlandStyle = 'modern'
-
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "oil",
   callback = function()
@@ -34,7 +32,5 @@ vim.cmd [[filetype plugin on]]
 vim.cmd [[filetype on]]
 vim.cmd [[autocmd BufEnter * lcd %:p:h]]
 
-vim.cmd [[colorscheme farout]]
+vim.cmd [[colorscheme enfocado]]
 
-require('lualine').setup({})
-require('luatab').setup({}) 
